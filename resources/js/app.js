@@ -51,7 +51,7 @@ function fetchData(country) {
 
   const api_fetch = async (country) => {
     await fetch(
-      "https://api.covid19api.com/total/country/" +
+      "http://api.covid19api.com/total/country/" +
         country +
         "/status/confirmed",
       requestOptions
@@ -67,7 +67,7 @@ function fetchData(country) {
       });
 
     await fetch(
-      "https://api.covid19api.com/total/country/" +
+      "http://api.covid19api.com/total/country/" +
         country +
         "/status/recovered",
       requestOptions
@@ -82,7 +82,7 @@ function fetchData(country) {
       });
 
     await fetch(
-      "https://api.covid19api.com/total/country/" + country + "/status/deaths",
+      "http://api.covid19api.com/total/country/" + country + "/status/deaths",
       requestOptions
     )
       .then((res) => {
